@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAM SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1546374cd4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Open+Sans:wght@300;400;600&family=Oxanium:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header>
+            <div id="nav-bar">
+                <div class="web-name"> 
+                    <img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="40"> 
+                </div>
+                <div>
+                    <ul class="nav-group">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>
+                            <span> Shop</span> 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>Blog</li>
+                        <li>
+                            <span>Pages</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                    </ul>
+                </div>
+               <div class="more">
+                <ul>
+                    <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                    <li>
+                    <i class="fa-solid fa-user"></i> 
+                    </li>
+                    <li>Sign in</li>
+                </ul>
+            </div>
+            </div>
+    </header>
+    <main>
+        <div id="root">
+            <div class="container">
+              <div class="genres-list-area">
+                <div class="search-form">
+                  <input type="text" class="search-input" placeholder="Enter text to search..." />
+                  <button type="button" class="search-btn">Search</button>
+                </div>
+                <h3>Genres</h3>
+                <ul class="genres-list">
+                  
+                </ul>
+                <div class="error hidden"></div>
+              </div>
+              <div class="games-area">
+                <h3>Games</h3>
+                <div class="pagination">
+                  <span id="currentPage" class="hidden"></span>
+                  <button class="move-page prev" onclick="prevPage()"> <- Prev </button>
+                  <button class="move-page next" onclick="nextPage()"> Next -> </button>
+        
+                </div>
+                <div id="game-list"></div>
+        
+              </div>
+            </div>
+        
+          </div>
+    </main>
+  
+    <footer>
+        <div class="infor">
+            <div class="row">
+                <h4>About Game Play</h4>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="row">
+                <h4>Buy</h4>
+                <a href="#">How to buy</a>
+                <a href="#">Game list</a>
+                <a href="#">Collections</a>
+            </div>
+            <div class="row">
+                <h4>Help</h4>
+                <a href="#">FAQ</a>
+                <a href="#">How to active game</a>
+                <a href="#">Create a ticket</a>
+            </div>
+            <div class="row">
+                <h4>Community</h4>
+                <a href="#">Blog</a>
+                <a href="#">Giveaway</a>
+                <a href="#">Become affiliate</a>
+            </div>
+        </div>
+            
+            <div class="other">
+                <a href="#">Legal</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Our thanks</a>
+                <a href="#">Cookies declaration</a>
+            </div>
+            
+            <div class="social">
+                <a href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#"> 
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+               <a href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+               </a>
+            </div>
+            
+            <div class ="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <span> 2022. STEAM. Design by Vy Nguyen.</span> 
+            </div>
+    </footer>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
+

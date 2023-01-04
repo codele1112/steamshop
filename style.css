@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oxanium", cursive;
+  font-size: 1.25rem;
+  color: #ccc;
+  background-color: #000;
+}
+h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+#nav-bar li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+#nav-bar {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(26, 16, 36);
+  color: #fff;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  border-bottom: 0.5px solid #ccc;
+}
+.fa-solid {
+  color: #fff;
+}
+.fa-chevron-down {
+  font-size: 1em;
+}
+
+li {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.genres-list {
+  list-style-type: none;
+}
+.btn {
+  font-family: "Oxanium", cursive;
+  text-transform: uppercase;
+  min-width: 10rem;
+  min-height: 2rem;
+  font-size: 1rem;
+  border: transparent;
+  border-bottom: 0.05rem solid #ccc;
+  background-color: transparent;
+  color: #ccc;
+}
+.btn:hover {
+  cursor: pointer;
+  color: rgb(210, 190, 30);
+  filter: brightness(130%);
+}
+
+.container {
+  padding-top: 0.5rem;
+  width: 100%;
+  display: flex;
+}
+.search-form {
+  margin-top: 1em;
+  margin-left: 0.5em;
+  padding-bottom: 1em;
+  display: flex;
+}
+.search-input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 0.05em solid yellow;
+  color: #fff;
+  padding-right: 2em;
+}
+.search-btn {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: transparent;
+  color: #fff;
+  border: 0.05em solid #ccc;
+  border-radius: 0.5em;
+}
+
+.search-btn:hover {
+  filter: brightness(130%);
+  cursor: pointer;
+}
+.genres-list-area {
+  max-width: 45%;
+}
+.genres-list {
+  padding-top: 1em;
+}
+
+.games-area {
+  margin-left: 0.5rem;
+}
+.pagination {
+  text-align: center;
+}
+.move-page {
+  margin: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: transparent;
+  color: #fff;
+  border: 0.05em solid #ccc;
+  border-radius: 0.5em;
+}
+.move-page:hover {
+  filter: brightness(130%);
+  cursor: pointer;
+}
+#game-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-game {
+  margin: 1em;
+}
+
+.box-game:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+}
+.infor-game {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(210, 190, 30);
+  background-color: rgb(62, 6, 62);
+  padding: 0.5em;
+}
+.infor-game > a {
+  color: rgb(210, 190, 30);
+}
+.img-detail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 80%;
+}
+
+.back {
+  font-family: "Oxanium", cursive;
+  text-transform: uppercase;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: transparent;
+  color: #ccc;
+  border: transparent;
+  border-bottom: solid 0.05em #fff;
+  margin-bottom: 3em;
+  margin-left: 3em;
+}
+.back:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+}
+
+.discribe-game {
+  line-height: 2.5em;
+}
+.name-game {
+  color: rgb(200, 90, 20);
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em;
+}
+.description {
+  text-align: justify;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.description::first-letter {
+  font-size: 2.5em;
+  color: rgb(160, 30, 110);
+}
+.more-info > span {
+  color: rgb(210, 190, 30);
+  display: block;
+  font-size: 0.75em;
+  text-align: end;
+  margin-right: 2em;
+}
+
+footer {
+  background-image: url("https://w0.peakpx.com/wallpaper/516/997/HD-wallpaper-cosmic-circuitry-section-9-revision-metaverse-gits-cyberpunk-section-9-ultrawide-simulation.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+  opacity: 0.8;
+  font-family: "Inter", sans-serif;
+  color: rgb(118, 118, 123);
+}
+
+footer .row a {
+  display: block;
+}
+
+footer h4 {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oxanium", cursive;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(114, 114, 131);
+  margin: 20px;
+}
+footer .infor {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer .other {
+  height: 60px;
+  line-height: 60px;
+}
+footer .other a {
+  padding-right: 40px;
+  color: rgb(114, 114, 131);
+  margin: 20px;
+}
+
+footer .other,
+.social {
+  border-bottom: 0.5px solid #ccc;
+  padding: 0 15px;
+}
+
+footer .social a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 5px;
+  color: #fff;
+}
+footer a:hover {
+  color: rgb(252, 166, 17);
+}
+
+footer .copyright {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oxanium", cursive;
+  color: #fff;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 801px) {
+  body {
+    font-size: 0.75em;
+  }
+  .web-name {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-group {
+    display: none;
+  }
+  .more {
+    display: none;
+  }
+  .btn {
+    font-size: 0.75em;
+    text-align: left;
+    margin-left: 1em;
+    min-width: 3rem;
+  }
+  .search-form {
+    margin-top: 1em;
+    display: block;
+  }
+  .pagination {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search-input {
+    padding-right: 0;
+  }
+  .search-btn {
+    margin-top: 1em;
+  }
+  .genres-list-area {
+    max-width: 20%;
+  }
+  .games-area {
+    max-width: 80%;
+  }
+  .game-img {
+    max-width: 15em;
+  }
+  .box-game {
+    max-width: 15em;
+  }
+  .back {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1em;
+    margin-left: 19em;
+    font-size: 0.75em;
+  }
+  .img-detail {
+    max-width: 80%;
+  }
+  .name-game {
+    text-align: center;
+    font-size: 0.75em;
+    padding: 0.5em;
+  }
+  .description {
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.75em;
+  }
+  .description::first-letter {
+    font-size: 1.25em;
+  }
+  .more-info > span {
+    font-size: 0.65em;
+  }
+  footer .infor,
+  .other {
+    display: none;
+  }
+  footer .social {
+    text-align: center;
+  }
+}
